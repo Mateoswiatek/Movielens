@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a58bd3d3-cd55-4bb6-8ac3-4bf3a051e3dc" name="Changes" comment="first">
+    <list default="true" id="a58bd3d3-cd55-4bb6-8ac3-4bf3a051e3dc" name="Changes" comment="add Movie, MovieGenre, Tag.">
       <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/1/a11d7f68eb3eddd95eeb9ff6ee38ee1261478b35" afterDir="false" />
@@ -12,11 +12,12 @@
       <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/1/a11d7f68eb3eddd95eeb9ff6ee38ee1261478b35" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/swiatek/mateusz/model/Movie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/swiatek/mateusz/model/MovieGenre.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/swiatek/mateusz/model/Tag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/swiatek/mateusz/model/Rating.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/movielens.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/movielens.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/swiatek/mateusz/model/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/swiatek/mateusz/model/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/swiatek/mateusz/model/MovieGenre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/swiatek/mateusz/model/MovieGenre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/swiatek/mateusz/model/Tag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/swiatek/mateusz/model/Tag.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/swiatek/mateusz/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/swiatek/mateusz/model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
     </list>
@@ -110,7 +111,7 @@
       <updated>1706889976309</updated>
       <workItem from="1706889978358" duration="5000" />
       <workItem from="1706890678949" duration="1984000" />
-      <workItem from="1706897635996" duration="2656000" />
+      <workItem from="1706897635996" duration="4355000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <option name="closed" value="true" />
@@ -120,7 +121,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706898524293</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add Movie, MovieGenre, Tag.">
+      <option name="closed" value="true" />
+      <created>1706900359650</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1706900359650</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,7 +137,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first" />
-    <option name="LAST_COMMIT_MESSAGE" value="first" />
+    <MESSAGE value="add Movie, MovieGenre, Tag." />
+    <option name="LAST_COMMIT_MESSAGE" value="add Movie, MovieGenre, Tag." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

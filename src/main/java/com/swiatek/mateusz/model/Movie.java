@@ -31,4 +31,9 @@ public class Movie {
     @OneToMany(mappedBy = "movie")
     private
     Set<Tag> tags = new HashSet<>();
+
+    @OneToMany(mappedBy = "movie")
+    private
+    Set<Tag> ratings = new HashSet<>();
+
 }

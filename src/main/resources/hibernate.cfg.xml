@@ -20,6 +20,7 @@
         <mapping class="com.swiatek.mateusz.model.Movie"/>
         <mapping class="com.swiatek.mateusz.model.MovieGenre"/>
         <mapping class="com.swiatek.mateusz.model.Tag"/>
+        <mapping class="com.swiatek.mateusz.model.Rating"/>
 
 
     </session-factory>

@@ -26,4 +26,7 @@ public class User {
     @OneToMany(mappedBy = "user")
     private
     Set<Tag> tags = new HashSet<>();
+    @OneToMany(mappedBy = "user")
+    private
+    Set<Tag> ratings = new HashSet<>();
 }

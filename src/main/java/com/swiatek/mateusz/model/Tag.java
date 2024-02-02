@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.ToString;
 
 import java.time.LocalDate;
+import java.util.Date;
 
 
 @Entity
@@ -22,7 +23,8 @@ public class Tag {
     Movie movie;
 
 
-    LocalDate date;
+//    LocalDate date;
+    Date date;
     String tag;
 
 

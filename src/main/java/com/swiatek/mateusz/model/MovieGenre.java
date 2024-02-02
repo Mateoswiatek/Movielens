@@ -26,8 +26,8 @@ public class MovieGenre {
 
         public boolean equals(Object o) {
             if (this == o) return true;
-            if (!(o instanceof MovieGenreId)) return false;
-            MovieGenreId other = (MovieGenreId) o;
+            if (!(o instanceof MovieGenreId other)) return false;
+            // tutaj dzieki instanceof mamy odrazu ohter, i nie trzeba rzutowac
             return Objects.equals(other.getGenre(), this.getGenre()) &&
                     Objects.equals(this.getMovie(), other.getMovie());
         }
