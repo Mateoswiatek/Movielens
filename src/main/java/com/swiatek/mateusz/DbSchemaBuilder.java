@@ -8,6 +8,9 @@ public class DbSchemaBuilder {
     static void connectToDb(){
         SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
         Session ses = sessionFactory.openSession();
+        DBFeeder.feedUsers();
+
+
         ses.close();
 
     }
