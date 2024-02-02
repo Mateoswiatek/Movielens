@@ -2,6 +2,7 @@ package com.swiatek.mateusz;
 
 import com.opencsv.CSVReader;
 import com.opencsv.exceptions.CsvValidationException;
+import com.swiatek.mateusz.model.Movie;
 import com.swiatek.mateusz.model.User;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -30,8 +31,8 @@ public class DBFeeder {
                         .surname(nextLine[2])
                         .email(nextLine[3])
                         .build();
-//                ses.persist(user); // bo save jest przestazale?
-                ses.save(user);
+                ses.persist(user); // bo save jest przestazale?
+//                ses.save(user);
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -41,7 +42,33 @@ public class DBFeeder {
         t.commit();
         ses.close();
     }
-//    static void feedMovies()
+    static void feedMovies() {
+        SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
+        Session ses = sessionFactory.openSession();
+        Transaction t = ses.beginTransaction();
+
+        CSVReader reader;
+        try {
+            reader = new CSVReader(new FileReader("movies.csv"));
+            String[] nextLine;
+            reader.readNext(); // header
+            while((nextLine = reader.readNext()) != null) {
+                Movie movie = Movie.builder()
+                        .id(Long.valueOf(nextLine[0]))
+                        .title(nextLine[1])
+                        .build();
+
+                ses.persist(movie); // bo save jest przestazale?
+//                ses.save(movie);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (CsvValidationException e) {
+            throw new RuntimeException(e);
+        }
+        t.commit();
+        ses.close();
+    }
 //    static void feedTags()
 //    static void feedRatings()
 

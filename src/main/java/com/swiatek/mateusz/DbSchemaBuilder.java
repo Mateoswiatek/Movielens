@@ -9,7 +9,7 @@ public class DbSchemaBuilder {
         SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
         Session ses = sessionFactory.openSession();
         DBFeeder.feedUsers();
-
+        DBFeeder.feedMovies();
 
         ses.close();
 
