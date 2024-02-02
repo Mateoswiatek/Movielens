@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a58bd3d3-cd55-4bb6-8ac3-4bf3a051e3dc" name="Changes" comment="feed / mock Users">
+    <list default="true" id="a58bd3d3-cd55-4bb6-8ac3-4bf3a051e3dc" name="Changes" comment="feed / mock Movies">
       <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/1/a11d7f68eb3eddd95eeb9ff6ee38ee1261478b35" afterDir="false" />
@@ -17,6 +17,8 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/swiatek/mateusz/DBFeeder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/swiatek/mateusz/DBFeeder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/swiatek/mateusz/DbSchemaBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/swiatek/mateusz/DbSchemaBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/swiatek/mateusz/model/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/swiatek/mateusz/model/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/swiatek/mateusz/model/Rating.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/swiatek/mateusz/model/Rating.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/swiatek/mateusz/model/Tag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/swiatek/mateusz/model/Tag.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +110,7 @@
       <updated>1706889976309</updated>
       <workItem from="1706889978358" duration="5000" />
       <workItem from="1706890678949" duration="1984000" />
-      <workItem from="1706897635996" duration="5765000" />
+      <workItem from="1706897635996" duration="8583000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <option name="closed" value="true" />
@@ -142,7 +144,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706903172215</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="feed / mock Movies">
+      <option name="closed" value="true" />
+      <created>1706903460441</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1706903460441</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,7 +163,8 @@
     <MESSAGE value="add Movie, MovieGenre, Tag." />
     <MESSAGE value="add Rating" />
     <MESSAGE value="feed / mock Users" />
-    <option name="LAST_COMMIT_MESSAGE" value="feed / mock Users" />
+    <MESSAGE value="feed / mock Movies" />
+    <option name="LAST_COMMIT_MESSAGE" value="feed / mock Movies" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

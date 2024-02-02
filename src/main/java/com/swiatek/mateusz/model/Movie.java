@@ -15,8 +15,7 @@ import java.util.Set;
 @AllArgsConstructor
 public class Movie {
     @Id
-    private
-    Long id;
+    private Long id;
     private String title;
 
     // bo w Javie trzeba dawac w druga strone, bo inaczej nie bedzie dzialac

@@ -8,12 +8,13 @@ public class DbSchemaBuilder {
     static void connectToDb(){
         SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
         Session ses = sessionFactory.openSession();
-        DBFeeder.feedUsers();
-        DBFeeder.feedMovies();
-
+        DBFeeder.deleteAll();
+//        DBFeeder.feedUsers();
+//        DBFeeder.feedMovies();
+        // DBFeeder.feedTags();
         ses.close();
-
     }
+
     public static void main(String[] args) {
         connectToDb();
     }

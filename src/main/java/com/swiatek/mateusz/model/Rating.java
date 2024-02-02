@@ -48,7 +48,6 @@ public class Rating  {
     @EmbeddedId
     RatingId ratingId = new RatingId();
 
-
     void setUser(User user){
         ratingId.setUser(user);
     }
