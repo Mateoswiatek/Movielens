@@ -9,9 +9,10 @@ public class DbSchemaBuilder {
         SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
         Session ses = sessionFactory.openSession();
         DBFeeder.deleteAll();
-//        DBFeeder.feedUsers();
-//        DBFeeder.feedMovies();
-        // DBFeeder.feedTags();
+        DBFeeder.feedUsers();
+        DBFeeder.feedMovies();
+//        DBFeeder.feedTags();
+        DBFeeder.check();
         ses.close();
     }
 
@@ -19,3 +20,9 @@ public class DbSchemaBuilder {
         connectToDb();
     }
 }
+
+/*
+Q1 select * from users where id in (select id from ratings order by count(*) desc limit 10);
+Q2 select id, title from movies natural join tags where tags = 'Drama' limit 100;
+...
+ */

@@ -14,6 +14,7 @@ import org.hibernate.cfg.Configuration;
 import java.io.FileReader;
 import java.io.IOException;
 import java.sql.Date;
+import java.util.Arrays;
 
 public class DBFeeder {
     static void deleteAll() {
@@ -21,13 +22,15 @@ public class DBFeeder {
         Session ses = sessionFactory.openSession();
         Transaction t = ses.beginTransaction();
 
-        Query query = ses.createQuery("delete User");
-        int result = query.executeUpdate();
-        if (result > 0) {
-            System.out.println("Users were removed");
+        for(var cls: Arrays.asList("User","Movie","MovieGenre","Tag","Rating")) {
+            Query query = ses.createQuery("delete " + cls);
+            int result = query.executeUpdate();
+            if (result > 0) {
+                System.out.println(cls + " were removed");
+            }
+            t.commit();
+            ses.close();
         }
-        t.commit();
-        ses.close();
     }
 
     static void feedUsers() {
@@ -121,4 +124,17 @@ public class DBFeeder {
     }
 //    static void feedRatings()
 
+    static void check(){
+        SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
+        Session ses = sessionFactory.openSession();
+        for(var cls: Arrays.asList("User","Movie","MovieGenre","Tag","Rating")){
+            // cos sie wywala niestety
+            Query query = ses.createQuery("select count(*) from "+cls);
+//            Long count = (Long)query.uniqueResult();
+            Long count = query.getResultStream().count();
+            System.out.println(String.format("%s:%d",cls,count));
+        }
+
+        ses.close();
+    }
 }
